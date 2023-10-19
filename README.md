@@ -1,5 +1,20 @@
 # Fantastic Guacamole
 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+## Table of Contents
+
+ * [Description](#description)
+
+ * [Live-Screen-Recording-of-Application-Functionality](#live-screen-recording-of-application-functionality)
+
+ * [Screenshot](#screenshot)
+
+ * [License](#license)
+
+ * [Questions](#questions)
+
 ## Description
 
 Fantastic Guacamole is a command-line application designed to help business owners manage their company’s departments, roles, and employees. It provides a user-friendly interface for organizing and planning business operations.
@@ -43,20 +58,37 @@ To install the required dependencies, use the following command:
 
 npm install
 
-Technologies Used
+## Technologies Used
 
 	•	Node.js
 	•	Inquirer (for user input)
 	•	MySQL (for database management)
 
-Contributors
+## live-screen-recording-of-application-functionality
+("https://drive.google.com/file/d/1mZfo1pngDeRKVZZN0pqal5jLjOIJ6jtE/view")
+
+
+## Screenshot
+![E1835B5E-9D69-4A8F-BCB6-00F32F40B234](https://github.com/Kingwizard96/new-rep-sample/assets/132643725/45c0e209-a195-41e3-9aac-db3eed3c616b)
+
+
+
+
+![C2836A6A-B062-46AD-82FA-3CB5B54B347B](https://github.com/Kingwizard96/new-rep-sample/assets/132643725/8a21580c-f0f4-4ec7-8d74-65efed455182)
+
+
+
+## Contributors
 
 	•	Cristofher Alvarado
 
-License
+## License
 
-This project is licensed under the [License Name] License - see the LICENSE file for details.
+NOTICE: This application is covered under the MIT License
 
-Questions
+## Questions
 
-If you have any questions about the project, please feel free to contact [Your Email].
+If you have any questions about the project, please feel free to contact 
+
+- GitHub Profile: [GitHub Username](https://github.com/kingwizard96)
+- Email: [Email Address](mailto:calvarado1996@gmail.com)
