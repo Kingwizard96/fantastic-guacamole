@@ -145,6 +145,11 @@ function init() {
         });
        });    
     };
+
+    function addRole() {
+        console.log("Adding Role...");
+        
+}
     
 
 
