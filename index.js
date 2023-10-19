@@ -17,7 +17,11 @@ function init() {
         if(answer.choice === "View Departments") {
             viewDepartments();
             // write  the logic to view departments
-        }
+        }else if(answer.choice === "View Roles") {
+            viewRoles(); 
+        }else{ 
+            viewEmployees();
+        };
     });
 };
 
