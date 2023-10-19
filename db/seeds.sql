@@ -14,7 +14,11 @@ VALUES ("Sales Representative", 60000, 1),
        ("Lawyer", 19000, 4);
 
 INSERT INTO employees(first_name, last_name, role_id, manager_id)
-VALUES ("ricky", "bobby", 2, 23),
-        ("rick", "james", 3, 24);
+VALUES  ("ichigo", "kurusaki", 3, 24),
+        ("sasuke", "uchiha", 4, 25),
+        ("naruto", "uzumaki", 5, 26),
+        ("sakura", "haruno", 6, NULL),
+        ("hinata", "hyuga", 7, 28),
+        ("itachi", "uchiha",1, NULL);
 
 
