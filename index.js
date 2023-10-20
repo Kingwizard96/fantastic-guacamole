@@ -201,7 +201,45 @@ function init() {
                 init();
             });
         });
-}
+    } 
+        
+    function updateEmployeeRole() {
+        console.log("Updating Employee Role...");
+        inquirer.prompt([
+            {
+                type: 'input',
+                name: 'id',
+                message: 'What is the id of the employee you would like to update?',
+                validate: nameInput => {
+                    if (nameInput) {
+                      return true;
+                    } else {
+                      console.log('Please enter the employee id!');
+                      return false;
+                    }
+                  }
+            },
+            {
+                type: 'input',
+                name: 'role_id',
+                message: 'What is the role id of the employee you would like to update?',
+                validate: nameInput => {
+                    if (nameInput) {
+                      return true;
+                    } else {
+                      console.log('Please enter the employee role id!');
+                      return false;
+                    }
+                  }
+            },
+        ]).then((answer) => {
+            console.log(answer);
+            db.promise().query('UPDATE employees SET role_id = ? WHERE id = ?', [answer.role_id, answer.id]).then(([rows]) => {
+                console.table(rows);
+                init();
+            });
+        });
+    }
     
 
 
