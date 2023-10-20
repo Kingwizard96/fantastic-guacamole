@@ -154,7 +154,53 @@ function init() {
 
     function addRole() {
         console.log("Adding Role...");
-        
+        inquirer.prompt([
+            {
+                type: 'input',
+                name: 'title',
+                message: 'What is the title of the role you would like to add?',
+                validate: nameInput => {
+                    if (nameInput) {
+                      return true;
+                    } else {
+                      console.log('Please enter the role title!');
+                      return false;
+                    }
+                  }
+            },
+            {
+                type: 'input',
+                name: 'salary',
+                message: 'What is the salary of the role you would like to add?',
+                validate: nameInput => {
+                    if (nameInput) {
+                      return true;
+                    } else {
+                      console.log('Please enter the role salary!');
+                      return false;
+                    }
+                  }
+            },
+            {
+                type: 'input',
+                name: 'department_id',
+                message: 'What is the department id of the role you would like to add?',
+                validate: nameInput => {
+                    if (nameInput) {
+                      return true;
+                    } else {
+                      console.log('Please enter the role department id!');
+                      return false;
+                    }
+                  }
+            },
+        ]).then((answer) => {
+            console.log(answer);
+            db.promise().query('INSERT INTO role SET ?', answer).then(([rows]) => {
+                console.table(rows);
+                init();
+            });
+        });
 }
     
 
