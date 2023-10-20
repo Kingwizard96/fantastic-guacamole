@@ -42,6 +42,8 @@ function init() {
         console.log("Viewing Departments...");
         db.promise().query('SELECT * FROM department').then(([rows]) => {
             console.table(rows);
+        }).catch((err) => {
+            console.error('Error querying employees:', err);
         }).then(() => {
             init();
         });
@@ -51,6 +53,8 @@ function init() {
         console.log("Viewing Roles...");
         db.promise().query('SELECT * FROM role').then(([rows]) => {
             console.table(rows);
+        }).catch((err) => {
+            console.error('Error querying employees:', err);
         }).then(() => {
             init();
         });
@@ -60,6 +64,8 @@ function init() {
         console.log("Viewing Employees...");
         db.promise().query('SELECT * FROM employees').then(([rows]) => { 
             console.table(rows);
+        }).catch((err) => {
+            console.error('Error querying employees:', err);
         }).then(() => {
             init();
         });
@@ -148,7 +154,7 @@ function init() {
 
     function addRole() {
         console.log("Adding Role...");
-        
+
 }
     
 
